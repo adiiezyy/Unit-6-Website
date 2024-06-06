@@ -1,0 +1,340 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 20px;
+    height: 60px;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.intro {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.intro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    text-align: center;
+}
+
+.intro-text h1 {
+    font-size: 48px;
+    margin: 0 0 30px 0; /* Increased margin bottom to 30px */
+    color: white;
+    display: inline;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.intro-text p {
+    font-size: 18px;
+    margin: 0 0 40px 0;
+    color: white;
+    display: inline;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.intro-text button {
+    margin-top: 30px; /* Add margin to create space above the button */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.intro-text button:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+main {
+    padding: 0;
+    overflow-x: hidden;
+}
+
+section {
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.about-section {
+    background-color: black;
+    color: white;
+    text-align: left;
+    padding: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.about-section h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.team-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.team-section h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background-color: white;
+    color: black;
+    text-align: center;
+    width: 300px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.team-member img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.team-member h2 {
+    margin: 10px 0;
+}
+
+.team-member p {
+    margin: 5px 10px 10px;
+}
+
+.jobs-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.job-listing {
+    background-color: white;
+    color: black;
+    text-align: left;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.job-listing h2 {
+    margin-bottom: 20px;
+}
+
+.job-listing h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.job-listing ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.job-listing ul li {
+    margin-bottom: 10px;
+}
+
+.courses-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.courses-section p {
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.course-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.course-card {
+    background-color: white;
+    color: black;
+    text-align: center;
+    width: 300px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.course-header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.course-features {
+    list-style-type: none;
+    padding: 20px;
+    text-align: left;
+}
+
+.course-features li {
+    padding: 10px 0;
+}
+
+.course-price {
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.course-button {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.course-button:hover {
+    background-color: #555;
+}
+
+.apply-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.apply-form {
+    max-width: 500px;
+    margin: 20px auto 0; /* Add top margin to create gap */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.apply-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.apply-form input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.apply-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.apply-form button:hover {
+    background-color: #555;
+}
